@@ -21,3 +21,10 @@ function isEven(input){
     }
     return false;
 }
+function isVowel(input){
+    var vowels=["a","e","i","o","u"];
+    if (vowels.indexOf(String(input).toLowerCase()) !== -1){
+        return true
+    }
+    return false;
+}
