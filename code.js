@@ -11,7 +11,13 @@ function sayHello(input){
 }
 function isFive(input){
     if(input == 5) {
-        return Boolean(input);
+        return true;
+    }
+    return false;
+}
+function isEven(input){
+    if(parseFloat(input) % 2 === 0) {
+        return true;
     }
     return false;
 }
