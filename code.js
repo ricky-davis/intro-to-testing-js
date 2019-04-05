@@ -3,5 +3,9 @@ const helloWorld = function() {
     return "Hello, World!";
 }
 function sayHello(input){
-    return "Hello, " + input + "!";
+    if (typeof input !== "string" || input==="" || !isNaN(parseFloat(input))){
+        return "Hello, World!";
+    }else {
+        return "Hello, " + input + "!";
+    }
 }
