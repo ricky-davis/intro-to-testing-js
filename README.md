@@ -43,7 +43,7 @@ This is an introduction to automated testing in JavaScript. The idea behind auto
     - If you're using IntelliJ, choose New->Project From Version Control->Git and then paste in the clone address.`git clone git@github.com:your-github-username/intro-to-testing-js.git`.
     - If you're using command line, then execute the following command line command: `git clone git@github.com:your-github-username/intro-to-testing-js.git`.
 1. Once cloned to your projects directory, open up the project.
-1. Launch `report.html` in your browser. You should see a set of green tests for the `sayHello` function.
+1. Launch `report.html` in your browser. You should see a set of green tests for the `helloWorld` function.
 1. Refresh `report.html` to re-run new code in `test.js` or `code.js`. Do this any time the test or the implementation code changes.
 
 ### Project Structure
@@ -119,7 +119,7 @@ Our next exercise is to follow the TDD workflow to develop incremental tests and
 - Finally, push your work by running `git push`. Pushing uploads your new commits to your remote repository, meaning your own fork on GitHub.
 
 ### Exercise #2 Ensure our function returns the right data type.
-- New tests will each have their own `expect`, `it`,  the `describe`
+- New tests will each have their own `expect`, `it`,  and `describe`
 - Step 1: The smallest possible test, now that the function exists, is to ensure that calling the function gives us a string. Inside of `tests.js`, add an assertion to `sayHello` that it "should return a string when called.". The test should look similar to `expect(typeof sayHello()).toBe("string")`
 - Step 2: Run all tests to make sure that the new test starts red.
 - Step 3: Have your `sayHello` function return a string. The simplest code and smallest change possible is to return an empty string `return ""`. 
